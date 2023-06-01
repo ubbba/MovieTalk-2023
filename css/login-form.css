@@ -1,0 +1,52 @@
+/* 수평적으로 중앙에 모은 다음 세로로 열세운다. */
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+}
+
+/* padding 위아래에 줘서 글과 input간격 멀게하기 */
+/* 테두리를 다 없애고 따로 bottom만 주기 */
+#login-form input {
+    padding: 15px 0px;
+    color: gray;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 25px;
+    /* boredr-color가 transition되어서 0,3초안에 색이 바뀌게 애니메이션 설정 */
+    
+}
+
+/* input 타입이 submit이 아닌 것들만 */
+#login-form input:not([type="submit"]) {
+    transition: border-color 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+#login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* login-form안에 있는 input을 focus했을 때 border 색상 */
+#login-form input:focus {
+    border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    /* 커서를 가져다대면 포인터가 바뀐다. */
+    cursor: pointer;
+    color: black;
+    padding: 20px;
+}
+
+#login-form a{
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    font-size: 13px;
+}

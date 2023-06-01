@@ -1,0 +1,29 @@
+.status-bar {
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+}
+
+/* 상태창의 3개의 div들이 정렬을 하기 위해 width 값을 3등분 */
+.status-bar_column {
+    width: 33%;
+}
+
+.status-bar_column:first-child span{
+    margin-right: 5px;
+}
+
+.status-bar_column:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar_column:last-child{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-bar_column .fa-battery-full {
+    margin: 0px 3px;
+}
