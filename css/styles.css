@@ -5,9 +5,13 @@
 @import "welcome-header.css";
 @import "login-form.css";
 @import "nav-bar.css";
+@import "screen-header.css";
+@import "friends.css";
+@import "user-component.css";
 
 body {
+    color: #2e363e;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 500;
+
 }
 
