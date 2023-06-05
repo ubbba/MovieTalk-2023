@@ -102,3 +102,40 @@
     right: 5px;
     font-size: 12px;
 }
+
+.open-post-heart i:hover {
+    will-change: transform;
+    animation: heartBeat 1s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+    0% {
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100%{
+        color: white;
+        transform: none;
+    }
+}
+
+.open-post-right:hover {
+    will-change: transform;
+    animation: imgBig 2s ease-in-out infinite;
+}
+
+@keyframes imgBig {
+    0% {
+        transform: none;
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: none;
+    }
+}

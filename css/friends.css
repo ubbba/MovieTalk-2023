@@ -31,3 +31,30 @@
         justify-content: space-between;
         color: rgba(0, 0, 0, 0.5);
     }
+
+    @keyframes splashani {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+
+    #splash-screen {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;     
+        top: 0;
+         background-image: url("https://i.pinimg.com/originals/1d/c3/c4/1dc3c469064035cb2fcf2c7c93ba282c.png"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+            animation: splashani 0.6s ease-in-out forwards;
+            color: white;
+        animation-delay: 1.6s;
+    }
+
+    

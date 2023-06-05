@@ -19,11 +19,55 @@
     position: relative;
 }
 
+.nav_btn {
+    transform: translateY(80px);
+    opacity: 0;
+    animation: appearBtn 0.6s ease-in-out forwards;
+}
+
+@keyframes appearBtn {
+    from {
+        
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.nav_btn:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.nav_btn:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+
+.nav_btn:last-child{
+    animation-delay: 0.9s;
+}
+
+
 .nav_notification {
 
     position: absolute;
     left: 23px;
     bottom:17px;
+    animation: notificationAni 3s ease-in-out infinite;
+}
+
+@keyframes notificationAni {
+    0% {
+        transform: none;
+    }
+    50%{
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100% {
+        transform: none;
+    }
 }
 
 .nav_dot {
