@@ -42,7 +42,7 @@
     }
 
 
-    /* #splash-screen {
+     #splash-screen {
         width: 100vw;
         height: 100vh;
         position: absolute;     
@@ -54,6 +54,6 @@
             animation: splashani 0.6s ease-in-out forwards;
             color: white;
         animation-delay: 1.6s;
-    } */
+    } 
 
     
