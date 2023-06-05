@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting - Movie Talk</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="">
+    
+</head>
+<body id="chat-screen">
+    <!-- 맨 위 상태창 -->
+    <div class="status-bar">
+        <div class="status-bar_column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>           
+        </div>
+        <div class="status-bar_column">
+            <span>17:53</span>
+        </div>
+        <div class="status-bar_column">
+            <i class="fa-solid fa-lock-open"></i>
+            <span>98%</span>
+            <i class="fa-solid fa-battery-full" style="color: #00ff40;"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="alt-header">
+        <div class="alt-header-column">
+            <a href="chats.html"><i class="fa-solid fa-angle-left fa-2x"></i></a>
+        </div>
+        <div class="alt-header-column">
+            <h1 class="alt-header-title">Panther</h1>
+        </div>
+        <div class="alt-header-column">
+            <span><i class="fa-solid fa-magnifying-glass fa-2x glass"></i></span>
+            <span><i class="fa-solid fa-bars fa-2x"></i></span>
+        </div>
+    </header>
+    
+
+
+    <main class="main-screen main-chat">  
+        <div class="chat-timestamp">
+            Monday, June 05, 2023
+        </div>
+
+
+        <!-- 시작 -->
+        <div class="message-row">
+            <img src="img/2.jpg">
+            <div class="message-row_content">
+                <span class="message_author">Panther</span>
+                <div class="message-info">
+                    <span class="message-bubble">Go</span>
+                    <span class="message-time">21:22</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 답장 -->
+        <div class="message-row message-row-own">
+            
+            <div class="message-row_content">
+                
+                <div class="message-info">
+                    <span class="message-bubble">Okay, We will meet my home</span>
+                    <span class="message-time">21:23</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <form class="reply">
+        <div class="reply-column">
+            <i class="fa-regular fa-square-plus fa-lg"></i>
+        </div>
+        <div class="reply-column">
+            <input type="text" placeholder="Write a message">
+            <i class="fa-regular fa-face-smile fa-lg"></i>
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </form>
+
+
+
+
+
+    <!-- 이모티콘을 사용하는 Font Awesome 코드 -->
+    <script src="https://kit.fontawesome.com/9fb6170d60.js" crossorigin="anonymous"></script>
+</body>
+</html>

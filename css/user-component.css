@@ -1,3 +1,7 @@
+.user-component {
+    justify-content: space-between;
+}
+
 .user-component,
 .user-component-column:first-child {
     display: flex;
@@ -31,4 +35,28 @@
     margin-right: 20px;
     /* 사진 크기를 줄일 때 가로 세로 비율 똑같이 */
     object-fit: cover;
+}
+
+
+.user-component-column:last-child {
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.user-component-avatar user-component-avatar-sm {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+}
+
+.user-component-title-not-bold {
+    font-weight: 400;
+}
+
+.user-component-time {
+    display: block;
+    margin-bottom: 10px ;
+
 }
