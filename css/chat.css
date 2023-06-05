@@ -1,6 +1,10 @@
 
 #chat-screen {
-    background-color: #abc1d1;
+    
+    background-image: url("https://i.pinimg.com/564x/b1/e6/45/b1e6454488c3979fe80eec0d5bcf57ce.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -10,7 +14,8 @@
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    background-color: #abc1d1;
+    background-image: url("https://i.pinimg.com/564x/b1/e6/45/b1e6454488c3979fe80eec0d5bcf57ce.jpg");
+    color: white;
 }
 
 #chat-screen .status-bar {
@@ -54,7 +59,9 @@
     margin-top: 20px;
     margin-bottom: 25px;
     animation: chatHi 0.8s ease-in-out;
+    
 }
+
 
 @keyframes chatHiReverse {
     from {
@@ -83,6 +90,7 @@
     font-size: 13px;
     margin-bottom: 5px;
     display: block;
+    color: white;
 }
 
 .message-bubble {
@@ -91,6 +99,7 @@
     border-radius: 15px;
     border-top-left-radius: 0px;
     margin-right: 5px;
+    color: rgb(32, 14, 14);
 }
 
 .message-info {
@@ -101,6 +110,7 @@
 .message-time {
     opacity: 0.8;
     font-size: 13px;
+    color: white;
 }
 
 .message-row-own {
@@ -200,4 +210,8 @@
 .reply:focus-within {
 
     transform: translateY(80px);
+}
+
+.reply-column i {
+    color: black;
 }

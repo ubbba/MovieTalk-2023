@@ -9,7 +9,8 @@
 
 .recommended-friends-title {
     font-size: 15px;
-    color: rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-bottom: 20px;
 }
 
 .recommended-friends span{
@@ -138,4 +139,41 @@
     100%{
         transform: none;
     }
+}
+
+.recommend-persona {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.personaImg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.personaImg:first-child {
+    margin-right: 20px;
+}
+
+.personaImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personaImg:hover {
+    will-change: transform;
+    animation: imgBig 2s ease-in-out infinite;
+}
+
+.personaImg span {
+    margin: 0;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
 }
